@@ -1,0 +1,82 @@
+İŞLETME AŞAMASI - İŞ AKIŞLARI
+ - Super Admin İşlemleri
+	 - Planların Tanımlanması
+	 - Özelliklerin (Features) Tanımlanması
+	 - Planlara Features Atama
+	 - Plan Ücretlerinin Belirlenmesi
+ - Abone İlk Kullanım İşlemleri 
+	 - Tanımlar
+		 - Uygulama Rollerinin Tanımlanması 
+		 - Rollerin Yetkilerinin Tanımlanması
+		 - Organizasyonel Tanımlar
+			 - Kurum Bilgi Tamamlama (Logo)
+			 - Departman Tanımlanması (Hiyerarşik) 
+			 - Pozisyonların Tanımlanması 
+			 - E posta Ayarları
+			 - E Posta Şablon Ayarları
+			 - Otomatik İşlem Ayarları (E Posta)
+			 - Zimmette Verilecek Varlıkların Tanımlanması
+		 - Finansal Tanımlar
+			 - Bordro Dönemlerinin Oluşturulması
+			 - Ücret Pusulası Tahakkuk ve Kesinti Tanımları 
+		 - Personel Tanımları
+			 - Personel Kayıtları (Hiyerarşik)
+			 - Kullanıcı Tanımları ve RollerYetkiler
+			 - Sözleşme ve Ücret Tanımları
+			 - Aile Bireyleri ve Diğer Personel Bilgileri
+		 - İş Kuralları Tanımları
+			 - Onay Akış Şablonları
+			 - Akış Adımları
+	 - İşletme
+		 - İK Yöneticisi İşlemleri
+			 - Personel İşlemleri
+				 - Personel Ekleme 
+				 - Personel Bilgi Güncelleme
+				 - Personel Durum Güncelleme
+				 - Personel Belge EklemeGüncelleme
+			 - Onam İşlemleri
+				 - Personel Belge-Bilgi Güncelleme Onamları
+				 - İzin Talep Onamları
+				 - Avans Talep Onamları
+				 - Personel Talebi Onamları
+				 - Şikayet Değerlendirmeleri
+				 - Öneri Değerlendirmeleri
+				 - Disiplin Kurulu İşlemleri
+					 - Savunma Talepleri
+					 - Ceza Bildirimleri
+				 - Zimmet İşlemleri Takibi
+			 - İşe Alım Süreçleri
+				 - İş İlanı Hazırlama
+				 - İş ilanı Yayınlama
+				 - Aday Havuzu Oluşturma
+				 - Aday Değerlendirmeleri
+				 - İş Teklifi Hazırlama ve Sunma
+				 - Oryantasyon Hazırlama
+				 - İşe Giriş işlemleri
+				 - Oryantasyon Takibi
+			 - Puantaj ve Bordro İşlemleri
+				 - Puantaj Aktarımları
+				 - Puantaj Onamları
+				 - Bordro Aktarımları
+			 - İşden Çıkış Süreci
+				 - Fesih Bildirimleri
+				 - Tazminat Hesaplamaları 
+				 - Zimmet İadeleri
+				 - Hesap Kapama
+				 - Çıkış Bildirgeleri
+			 - Performans Yönetimi
+				 - Performans Dönem Oluşturma
+				 - Değerlendirme Formu Oluşturma
+				 - Anketör Belirleme
+				 - Anket Değerlendirmeleri
+			 - Eğitim Modülü
+				 - StandartZorunlu Eğitim Takvimleri
+				 - Eğitim İhtiyaç Analizleri
+				 - Eğitim Program Geliştirme
+				 - Program Uygulama
+			 - Kariyer Modülü
+				 - Kariyer Yol haritası Oluşturma
+				 - Yetenek Havuzu Oluşturma
+				 - Mentorluk ve Koçluk Programları
+				 - Kariyer Geri Bildirimleri
+				 - Kariyer Gelişim Planları

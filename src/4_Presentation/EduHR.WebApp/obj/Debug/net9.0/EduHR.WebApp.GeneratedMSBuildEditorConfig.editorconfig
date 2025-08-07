@@ -1,0 +1,393 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EduHR.WebApp
+build_property.RootNamespace = EduHR.WebApp
+build_property.ProjectDir = D:\EduHR-2025\src\4_Presentation\EduHR.WebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\EduHR-2025\src\4_Presentation\EduHR.WebApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Plans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGxhbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Plans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGxhbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Plans/Features.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGxhbnNcRmVhdHVyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Plans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGxhbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Tenants/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVuYW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Tenants/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVuYW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Tenants/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVuYW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Admin/Tenants/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVuYW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Advance/Cancel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWR2YW5jZVxDYW5jZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Advance/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWR2YW5jZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Advance/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWR2YW5jZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Advance/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWR2YW5jZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Assets/AssetTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXRzXEFzc2V0VHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Assets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Assets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Assets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Assets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Finance/PayrollSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmluYW5jZVxQYXlyb2xsU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Finance/PayrollUpload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmluYW5jZVxQYXlyb2xsVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Finance/SalaryReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmluYW5jZVxTYWxhcnlSZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Leave/Cancel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVcQ2FuY2VsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Leave/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Leave/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Leave/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Leave/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Manager/Approvals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxBcHByb3ZhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Manager/MyTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxNeVRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Manager/TeamCalendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxUZWFtQ2FsZW5kYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Manager/TeamReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxUZWFtUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Manager/TeamReviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxUZWFtUmV2aWV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Manager/TeamTimesheets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlclxUZWFtVGltZXNoZWV0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Organization/Chart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JnYW5pemF0aW9uXENoYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Organization/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JnYW5pemF0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/Competencies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcQ29tcGV0ZW5jaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/CreateCycle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcQ3JlYXRlQ3ljbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/CycleResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcQ3ljbGVSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/Cycles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcQ3ljbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/EditCycle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcRWRpdEN5Y2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/FillReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcRmlsbFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Performance/MyReviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyZm9ybWFuY2VcTXlSZXZpZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/BulkImport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXEJ1bGtJbXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Documents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXERvY3VtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Offboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXE9mZmJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Onboarding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXE9uYm9hcmRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXFJlcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Personnel/Salary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29ubmVsXFNhbGFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/AnnouncementDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXEFubm91bmNlbWVudERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/Announcements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXEFubm91bmNlbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXENhbGVuZGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/FillSurvey.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXEZpbGxTdXJ2ZXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/ManageAnnouncements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXE1hbmFnZUFubm91bmNlbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/ManageSurveys.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXE1hbmFnZVN1cnZleXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Portal/Surveys.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsXFN1cnZleXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/CandidateDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcQ2FuZGlkYXRlRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/Candidates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcQ2FuZGlkYXRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/CreatePosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcQ3JlYXRlUG9zdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/EditPosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcRWRpdFBvc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/Interviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcSW50ZXJ2aWV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/PostingDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcUG9zdGluZ0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Recruitment/Postings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdG1lbnRcUG9zdGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Requests/MyRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdHNcTXlSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/ApprovalFlows.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcQXBwcm92YWxGbG93cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/CompanyProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcQ29tcGFueVByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/EmailSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcRW1haWxTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/Holidays.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcSG9saWRheXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/Subscription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcU3Vic2NyaXB0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Settings/WorkSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcV29ya1NjaGVkdWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_ModalPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Nb2RhbFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_NotificationsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Ob3RpZmljYXRpb25zUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_PageHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QYWdlSGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_PaginationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QYWdpbmF0aW9uUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/TimeAttendance/Approval.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUF0dGVuZGFuY2VcQXBwcm92YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/TimeAttendance/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUF0dGVuZGFuY2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/TimeAttendance/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUF0dGVuZGFuY2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/TimeAttendance/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUF0dGVuZGFuY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/EduHR-2025/src/4_Presentation/EduHR.WebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vb74k6x3r0

@@ -1,0 +1,22 @@
+Aşağıdakilere göre kontrol et:
+Mimari İlkeler, Yaklaşımlar, Terimler, Tercih-Kararlar
+•	SaaS Modeli
+•	Temiz Mimari
+•	Domain-Driven Design (DDD)
+•	CQRS (Command Query Responsibility Segregation)
+•	Bağımlılıkların Tersine Çevrilmesi (Dependency Inversion)
+•	C4 Modeli
+•	Çok Dillilik Desteği
+•	API First, 
+•	Claim Tabanlı Hybrid Yetkilendirme (Rol Tabanlı Yetkilendirme (RBAC) + İzin Tabanlı Yetkilendirmeye (Permission-Based Authorization))
+•	JWT Token'ı Güvenli ve HttpOnly Bir Cookie'de Saklamak
+•	İyimser Eşzamanlılık (Optimistic Concurrency) Yaklaşımı
+•	Anti-CSRF Token Mekanizması
+•	API 401 Yanıtlarının Yönetimi
+•	Veritabanı Yaklaşımı (Tek Veritabanı + Tek Şema)
+Planlama
+•	Plan adımlarının tamamlanmış olması. 
+•	Plan adım sırasına uygunluk
+Best Practice
+•	Bilinen en iyi uygulama örneklerine göre olması gereken en iyi kodlama şablonları, paketler ve güvenlik ilkelerine uygunluk
+Mantık ve Güvenlik Kontrolleri

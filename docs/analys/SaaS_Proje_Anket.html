@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS İş Modeli Üst Düzey Karar Alma Anketi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        legend {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            width: 100%;
+        }
+        label, .sub-question-label {
+            font-weight: 600;
+            color: #374151;
+        }
+        .sub-question-label {
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            display: block;
+        }
+        .sub-legend {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1f2937;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        textarea, input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        textarea:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .radio-group input:checked + label, .checkbox-group input:checked + label {
+            background-color: #dbeafe;
+            border-color: #3b82f6;
+        }
+        .print-button {
+            background-color: #2563eb;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border: none;
+        }
+        .print-button:hover {
+            background-color: #1d4ed8;
+        }
+        .question-block {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        }
+        .info-block {
+            background-color: #fefce8;
+            border: 1px solid #facc15;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .info-block h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #a16207;
+            margin-bottom: 1rem;
+        }
+        .info-block p {
+            color: #a16207;
+        }
+        .info-block ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #a16207;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+        <!-- ANKET BAŞLIĞI -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900">SaaS İş Modeli Strateji Anketi</h1>
+            <p class="mt-4 text-lg text-gray-600">
+                Bu doküman, geliştirilecek SaaS ürününün tüm kritik alanlarında bilinçli ve stratejik kararlar alınmasını sağlamak amacıyla hazırlanmıştır.
+            </p>
+        </header>
+
+        <!-- YENİ BİLGİLENDİRME BÖLÜMÜ -->
+        <div class="info-block">
+            <h2>Anketi Kullanmadan Önce</h2>
+            <p>Bu anket, farklı proje fikirlerini değerlendirmek için bir şablon olarak tasarlanmıştır. Aşağıdaki soruların seçenekleri, değerlendirilen proje fikrine göre özel olarak güncellenmelidir:</p>
+            <ul>
+                <li><b>Soru 1.2:</b> Müşterilerin mevcut çözüm yöntemleri.</li>
+                <li><b>Soru 2.1:</b> Potansiyel alıcı persona'lar.</li>
+                <li><b>Soru 2.2:</b> Potansiyel kullanıcı persona'lar.</li>
+                <li><b>Soru 5.1:</b> Proje fikrine özel MVP modülleri.</li>
+            </ul>
+        </div>
+
+        <form class="space-y-12">
+            <!-- BÖLÜM 1: PAZAR, PROBLEM VE MÜŞTERİ -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 1: Pazar, Problem ve Müşteri</legend>
+                <div class="space-y-8">
+                    <!-- Soru 1 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="problem" class="text-lg">1. Çözdüğümüz Temel Problem Nedir?</label>
+                        <p class="text-sm text-gray-500 mb-2">Tek bir cümle ile, müşterinin hangi acısını veya ihtiyacını ortadan kaldırıyoruz?</p>
+                        <textarea id="problem" name="problem" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label class="sub-question-label">1.1. Problemin Kritiklik Seviyesi Nedir?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="prob_nice_to_have" name="problem_criticality" value="nice_to_have" class="hidden"><label for="prob_nice_to_have">Olmasa da Olur (Nice-to-have)</label></div>
+                            <div><input type="radio" id="prob_must_have" name="problem_criticality" value="must_have" class="hidden"><label for="prob_must_have">Olmazsa Olmaz (Must-have)</label></div>
+                        </div>
+
+                        <label class="sub-question-label">1.2. Müşteriler Şu Anda Bu Problemi Nasıl Çözüyor?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                           <div><input type="checkbox" id="sol_excel" name="current_solution" value="excel" class="hidden"><label for="sol_excel">Excel / Google Sheets</label></div>
+                           <div><input type="checkbox" id="sol_email" name="current_solution" value="email" class="hidden"><label for="sol_email">Yoğun E-posta Trafiği</label></div>
+                           <div><input type="checkbox" id="sol_manual" name="current_solution" value="manual" class="hidden"><label for="sol_manual">Manuel Takip / Kağıt Formlar</label></div>
+                           <div><input type="checkbox" id="sol_other" name="current_solution" value="other" class="hidden"><label for="sol_other">Diğer Yazılımlar</label></div>
+                        </div>
+
+                        <label for="solution_weakness" class="sub-question-label">1.3. Bu Mevcut Çözümlerin En Zayıf Noktası Nedir?</label>
+                        <textarea id="solution_weakness" name="solution_weakness" rows="2" class="bg-gray-50"></textarea>
+                    </div>
+
+                    <!-- Soru 2 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="icp" class="text-lg">2. İdeal Müşteri Profilimiz (ICP) Kimdir?</label>
+                        <p class="text-sm text-gray-500 mb-2">Hangi sektördeki, hangi büyüklükteki, hangi coğrafyadaki şirketlere odaklanıyoruz?</p>
+                        <textarea id="icp" name="icp" rows="3" class="bg-gray-50" placeholder="Örn: Türkiye'deki 50-250 personele sahip özel okullar..."></textarea>
+                        
+                        <label class="sub-question-label">2.1. Alıcı Persona Kimdir? (Satın alma kararını veren)</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                           <div><input type="checkbox" id="buyer_founder" name="buyer_persona" value="founder" class="hidden"><label for="buyer_founder">Kurucu / Sahip</label></div>
+                           <div><input type="checkbox" id="buyer_gm" name="buyer_persona" value="gm" class="hidden"><label for="buyer_gm">Genel Müdür</label></div>
+                           <div><input type="checkbox" id="buyer_hr" name="buyer_persona" value="hr" class="hidden"><label for="buyer_hr">İK Yöneticisi</label></div>
+                           <div><input type="checkbox" id="buyer_it" name="buyer_persona" value="it" class="hidden"><label for="buyer_it">IT Yöneticisi</label></div>
+                        </div>
+
+                        <label class="sub-question-label">2.2. Kullanıcı Persona Kimdir? (Ürünü günlük kullanan)</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                           <div><input type="checkbox" id="user_hr" name="user_persona" value="hr" class="hidden"><label for="user_hr">İK Uzmanı</label></div>
+                           <div><input type="checkbox" id="user_employee" name="user_persona" value="employee" class="hidden"><label for="user_employee">Personel</label></div>
+                           <div><input type="checkbox" id="user_manager" name="user_persona" value="manager" class="hidden"><label for="user_manager">Departman Yöneticisi</label></div>
+                           <div><input type="checkbox" id="user_accountant" name="user_persona" value="accountant" class="hidden"><label for="user_accountant">Muhasebe</label></div>
+                        </div>
+                        
+                        <label for="persona_needs" class="sub-question-label">2.3. Alıcı ve Kullanıcı Persona'nın İhtiyaçları Arasında Ne Gibi Farklar Var?</label>
+                        <textarea id="persona_needs" name="persona_needs" rows="2" class="bg-gray-50"></textarea>
+                    </div>
+
+                    <!-- Soru 3 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="market_size" class="text-lg">3. Pazar Büyüklüğü Tahminleri (TAM, SAM, SOM) Nelerdir?</label>
+                        <p class="text-sm text-gray-500 mb-2">Toplam Adreslenebilir Pazar, Hizmet Edilebilir Adreslenebilir Pazar ve Erişilebilir Pazar hakkındaki sayısal tahminleriniz.</p>
+                        <textarea id="market_size" name="market_size" rows="3" class="bg-gray-50"></textarea>
+
+                        <label class="sub-question-label">3.1. Pazarın Büyüme Trendi Nedir?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 radio-group">
+                            <div><input type="radio" id="trend_growing" name="market_trend" value="growing" class="hidden"><label for="trend_growing">Büyüyor</label></div>
+                            <div><input type="radio" id="trend_stagnant" name="market_trend" value="stagnant" class="hidden"><label for="trend_stagnant">Durağan</label></div>
+                            <div><input type="radio" id="trend_shrinking" name="market_trend" value="shrinking" class="hidden"><label for="trend_shrinking">Küçülüyor</label></div>
+                        </div>
+
+                        <label class="sub-question-label">3.2. Pazara Giriş Engelleri Nelerdir?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                           <div><input type="checkbox" id="barrier_legal" name="market_barrier" value="legal" class="hidden"><label for="barrier_legal">Yasal Düzenlemeler</label></div>
+                           <div><input type="checkbox" id="barrier_competition" name="market_barrier" value="competition" class="hidden"><label for="barrier_competition">Yüksek Rekabet</label></div>
+                           <div><input type="checkbox" id="barrier_capital" name="market_barrier" value="capital" class="hidden"><label for="barrier_capital">Yüksek Sermaye Gereksinimi</label></div>
+                           <div><input type="checkbox" id="barrier_brand" name="market_barrier" value="brand" class="hidden"><label for="barrier_brand">Yerleşik Marka Sadakati</label></div>
+                        </div>
+
+                        <label for="market_share_goal" class="sub-question-label">3.3. İlk 12 Aylık Pazar Payı Hedefi Nedir (%)?</label>
+                        <input type="number" id="market_share_goal" name="market_share_goal" class="bg-gray-50" placeholder="Örn: 1">
+                    </div>
+
+                    <!-- Soru 4 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="competition" class="text-lg">4. Rekabet Ortamı Nasıl?</label>
+                        <p class="text-sm text-gray-500 mb-2">Doğrudan, dolaylı ve alternatif rakipler kimlerdir?</p>
+                        <textarea id="competition" name="competition" rows="3" class="bg-gray-50"></textarea>
+
+                        <label for="competitor_pricing" class="sub-question-label">4.1. Rakiplerin Fiyatlandırması Nasıl?</label>
+                        <textarea id="competitor_pricing" name="competitor_pricing" rows="2" class="bg-gray-50"></textarea>
+
+                        <label for="competitor_swot" class="sub-question-label">4.2. Rakiplerin En Güçlü ve Zayıf Yönleri Nelerdir?</label>
+                        <textarea id="competitor_swot" name="competitor_swot" rows="3" class="bg-gray-50"></textarea>
+
+                        <label for="competitor_complaints" class="sub-question-label">4.3. Müşterilerin Rakipler Hakkındaki Ana Şikayetleri Nelerdir?</label>
+                        <textarea id="competitor_complaints" name="competitor_complaints" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label for="uvp" class="sub-question-label">4.4. Bizim Benzersiz Değer Teklifimiz (UVP) Nedir?</label>
+                        <textarea id="uvp" name="uvp" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label for="why_us" class="sub-question-label">4.5. Müşteri Neden Rakibi Değil de Bizi Tercih Etmeli?</label>
+                        <textarea id="why_us" name="why_us" rows="2" class="bg-gray-50"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- BÖLÜM 2: ÜRÜN VE DEĞER TEKLİFİ -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 2: Ürün ve Değer Teklifi</legend>
+                <div class="space-y-8">
+                    <!-- Soru 5 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="mvp" class="text-lg">5. Minimum Uygulanabilir Ürün (MVP) Neleri İçermeli?</label>
+                        <p class="text-sm text-gray-500 mb-2">Para ödemesini sağlayacak en temel özellik seti nedir?</p>
+                        <textarea id="mvp" name="mvp" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label class="sub-question-label">5.1. MVP'ye Dahil Edilecek Çekirdek Modüller Hangileridir?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                           <div><input type="checkbox" id="mvp_module_tenant" name="mvp_module" value="tenant" class="hidden"><label for="mvp_module_tenant">Abone/Organizasyon Yönetimi</label></div>
+                           <div><input type="checkbox" id="mvp_module_personnel" name="mvp_module" value="personnel" class="hidden"><label for="mvp_module_personnel">Personel Yönetimi</label></div>
+                           <div><input type="checkbox" id="mvp_module_leave" name="mvp_module" value="leave" class="hidden"><label for="mvp_module_leave">İzin Yönetimi</label></div>
+                           <div><input type="checkbox" id="mvp_module_timesheet" name="mvp_module" value="timesheet" class="hidden"><label for="mvp_module_timesheet">Puantaj Yönetimi</label></div>
+                        </div>
+
+                        <label for="mvp_excluded" class="sub-question-label">5.2. MVP'nin Dışına Bilinçli Olarak Hangi Özellikleri Bırakıyoruz?</label>
+                        <textarea id="mvp_excluded" name="mvp_excluded" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label for="mvp_success" class="sub-question-label">5.3. MVP'nin Başarı Kriteri Ne Olacak?</label>
+                        <textarea id="mvp_success" name="mvp_success" rows="2" class="bg-gray-50" placeholder="Örn: 10 ücretli müşteri, %5 dönüşüm oranı, müşteri başına 3 aktif kullanıcı..."></textarea>
+                    </div>
+
+                    <!-- Soru 6 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="moat" class="text-lg">6. Ürünümüzün "Hendek" (Moat) Mekanizması Ne Olacak?</label>
+                        <p class="text-sm text-gray-500 mb-2">Rakiplerin bizi kopyalamasını zorlaştıracak olan şey nedir?</p>
+                        <textarea id="moat" name="moat" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label class="sub-question-label">6.1. Ana Savunma Mekanizmamız Hangisi Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                           <div><input type="checkbox" id="moat_brand" name="moat_type" value="brand" class="hidden"><label for="moat_brand">Marka Gücü</label></div>
+                           <div><input type="checkbox" id="moat_network" name="moat_type" value="network" class="hidden"><label for="moat_network">Network Etkisi</label></div>
+                           <div><input type="checkbox" id="moat_integration" name="moat_type" value="integration" class="hidden"><label for="moat_integration">Entegrasyon Ekosistemi</label></div>
+                           <div><input type="checkbox" id="moat_data" name="moat_type" value="data" class="hidden"><label for="moat_data">Veri Avantajı</label></div>
+                        </div>
+                        
+                        <label class="sub-question-label">6.2. Bu Savunma Mekanizması Zamanla Daha da Güçleniyor mu?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="moat_stronger_yes" name="moat_stronger" value="yes" class="hidden"><label for="moat_stronger_yes">Evet</label></div>
+                            <div><input type="radio" id="moat_stronger_no" name="moat_stronger" value="no" class="hidden"><label for="moat_stronger_no">Hayır</label></div>
+                        </div>
+                    </div>
+
+                    <!-- Soru 7 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label class="text-lg">7. Platform Stratejisi Nasıl Olacak?</label>
+                        <p class="text-sm text-gray-500 mb-2">Ürünümüz öncelikli olarak hangi platformda yer alacak?</p>
+                        <div class="mt-2 space-y-3 radio-group">
+                            <div><input type="radio" id="platform_web" name="platform_strategy" value="web" class="hidden"><label for="platform_web">Web Uygulaması Öncelikli</label></div>
+                            <div><input type="radio" id="platform_mobile" name="platform_strategy" value="mobile" class="hidden"><label for="platform_mobile">Mobil Uygulama Öncelikli</label></div>
+                            <div><input type="radio" id="platform_both" name="platform_strategy" value="both" class="hidden"><label for="platform_both">Her İkisi de Eş Zamanlı</label></div>
+                            <div><input type="radio" id="platform_api" name="platform_strategy" value="api" class="hidden"><label for="platform_api">Sadece API (Headless)</label></div>
+                        </div>
+                        
+                        <label for="platform_persona" class="sub-question-label">7.1. Hangi Kullanıcı Personası İçin Hangi Platform Daha Kritik?</label>
+                        <textarea id="platform_persona" name="platform_persona" rows="2" class="bg-gray-50" placeholder="Örn: Personel için mobil öncelikli, İK Yöneticisi için web öncelikli..."></textarea>
+                        
+                        <label class="sub-question-label">7.2. Sadece API Sunarak Arayüz Geliştirmeyi Üçüncü Partilere Bırakmayı Düşünüyor muyuz?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="api_only_yes" name="api_only" value="yes" class="hidden"><label for="api_only_yes">Evet, Düşünüyoruz</label></div>
+                            <div><input type="radio" id="api_only_no" name="api_only" value="no" class="hidden"><label for="api_only_no">Hayır, Düşünmüyoruz</label></div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- BÖLÜM 3: İŞ MODELİ VE FİYATLANDIRMA -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 3: İş Modeli ve Fiyatlandırma</legend>
+                <div class="space-y-8">
+                    <!-- Soru 8 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label class="text-lg">8. Fiyatlandırma Metriğimiz Ne Olacak?</label>
+                        <p class="text-sm text-gray-500 mb-2">Müşteriden neye göre ücret alacağız?</p>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="metric_user" name="pricing_metric" value="user" class="hidden"><label for="metric_user">Kullanıcı Başına</label></div>
+                            <div><input type="radio" id="metric_active_user" name="pricing_metric" value="active_user" class="hidden"><label for="metric_active_user">Aktif Kullanıcı Başına</label></div>
+                            <div><input type="radio" id="metric_usage" name="pricing_metric" value="usage" class="hidden"><label for="metric_usage">Kullanıma Bağlı</label></div>
+                            <div><input type="radio" id="metric_feature" name="pricing_metric" value="feature" class="hidden"><label for="metric_feature">Özellik Paketlerine Göre</label></div>
+                            <div><input type="radio" id="metric_flat" name="pricing_metric" value="flat" class="hidden"><label for="metric_flat">Sabit Ücret</label></div>
+                        </div>
+                        
+                        <label class="sub-question-label">8.1. Seçtiğimiz Metrik, Müşterinin Aldığı Değerle Birlikte Artıyor mu? (Value-metric alignment)</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="value_metric_yes" name="value_metric" value="yes" class="hidden"><label for="value_metric_yes">Evet</label></div>
+                            <div><input type="radio" id="value_metric_no" name="value_metric" value="no" class="hidden"><label for="value_metric_no">Hayır</label></div>
+                        </div>
+                        
+                        <label class="sub-question-label">8.2. Bu Metrik, Müşterinin Büyümesiyle Bizim Gelirimizi de Artırıyor mu?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="revenue_growth_yes" name="revenue_growth" value="yes" class="hidden"><label for="revenue_growth_yes">Evet</label></div>
+                            <div><input type="radio" id="revenue_growth_no" name="revenue_growth" value="no" class="hidden"><label for="revenue_growth_no">Hayır</label></div>
+                        </div>
+                    </div>
+
+                    <!-- Soru 9 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label class="text-lg">9. Fiyatlandırma Modeli ve Seviyeleri Nasıl Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                             <div><input type="radio" id="model_trial" name="pricing_model" value="trial" class="hidden"><label for="model_trial">Ücretsiz Deneme (Free Trial)</label></div>
+                             <div><input type="radio" id="model_freemium" name="pricing_model" value="freemium" class="hidden"><label for="model_freemium">Sınırlı Bedava Plan (Freemium)</label></div>
+                             <div><input type="radio" id="model_tiered" name="pricing_model" value="tiered" class="hidden"><label for="model_tiered">Katmanlı Paketler (Tiered)</label></div>
+                             <div><input type="radio" id="model_direct" name="pricing_model" value="direct" class="hidden"><label for="model_direct">Sadece Ücretli (Doğrudan Satış)</label></div>
+                        </div>
+                        
+                        <label for="trial_days" class="sub-question-label">9.1. "Ücretsiz Deneme" Seçilirse, Deneme Süresi Kaç Gün Olacak?</label>
+                        <input type="number" id="trial_days" name="trial_days" class="bg-gray-50" placeholder="14">
+                        
+                        <label for="freemium_plan" class="sub-question-label">9.2. "Freemium" Seçilirse, Bu Modelin Maliyetini ve Kötüye Kullanımını Nasıl Yöneteceğiz?</label>
+                        <textarea id="freemium_plan" name="freemium_plan" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label for="tiered_plan" class="sub-question-label">9.3. "Katmanlı Paketler" Seçilirse, Katmanlar Arasındaki Farklar ve Üst Pakete Geçiş Teşvikleri Neler Olacak?</label>
+                        <textarea id="tiered_plan" name="tiered_plan" rows="3" class="bg-gray-50"></textarea>
+                    </div>
+                     <!-- Soru 10 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="price_point" class="text-lg">10. Fiyat Noktamız (Price Point) Ne Olacak?</label>
+                        <p class="text-sm text-gray-500 mb-2">Belirlediğimiz paketler için aylık/yıllık ücret ne kadar olacak?</p>
+                        <textarea id="price_point" name="price_point" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label class="sub-question-label">10.1. Fiyatı Belirlerken Hangi Yaklaşımı Temel Aldık?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 radio-group">
+                            <div><input type="radio" id="price_approach_cost" name="price_approach" value="cost" class="hidden"><label for="price_approach_cost">Maliyet-Artı</label></div>
+                            <div><input type="radio" id="price_approach_competitor" name="price_approach" value="competitor" class="hidden"><label for="price_approach_competitor">Rekabet-Odaklı</label></div>
+                            <div><input type="radio" id="price_approach_value" name="price_approach" value="value" class="hidden"><label for="price_approach_value">Değer-Odaklı</label></div>
+                        </div>
+                        
+                        <label for="ltv_cac_ratio" class="sub-question-label">10.2. Hedeflediğimiz LTV / CAC Oranı Nedir?</label>
+                        <input type="text" id="ltv_cac_ratio" name="ltv_cac_ratio" class="bg-gray-50" placeholder="Örn: 3'ten büyük (LTV > 3x CAC)">
+                    </div>
+                </div>
+            </fieldset>
+            
+            <!-- BÖLÜM 4: PAZARLAMA, SATIŞ VE MÜŞTERİ YÖNETİMİ -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 4: Pazarlama ve Satış</legend>
+                 <div class="space-y-8">
+                    <!-- Soru 11 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label class="text-lg">11. Pazara Giriş (Go-to-Market) Stratejimiz Nedir?</label>
+                        <p class="text-sm text-gray-500 mb-2">İlk 10 ve 100 müşteriyi nasıl bulacağız?</p>
+                        <div class="mt-2 space-y-3 checkbox-group">
+                            <div><input type="checkbox" id="gtm_content" name="gtm" value="content" class="hidden"><label for="gtm_content">İçerik Pazarlaması / SEO (Blog, webinarlar)</label></div>
+                            <div><input type="checkbox" id="gtm_ads" name="gtm" value="ads" class="hidden"><label for="gtm_ads">Ücretli Reklamlar (Google Ads, LinkedIn)</label></div>
+                            <div><input type="checkbox" id="gtm_cold" name="gtm" value="cold" class="hidden"><label for="gtm_cold">Soğuk E-posta / Direkt Satış</label></div>
+                            <div><input type="checkbox" id="gtm_partners" name="gtm" value="partners" class="hidden"><label for="gtm_partners">Partnerlikler / İşbirlikleri</label></div>
+                        </div>
+
+                        <label for="channel_priority" class="sub-question-label">11.1. Hangi Kanala Öncelik ve Bütçe Ayıracağız?</label>
+                        <textarea id="channel_priority" name="channel_priority" rows="2" class="bg-gray-50"></textarea>
+
+                        <label for="channel_roi" class="sub-question-label">11.2. Hangi Kanalların Bize En Hızlı Geri Dönüşü Sağlamasını Bekliyoruz?</label>
+                        <textarea id="channel_roi" name="channel_roi" rows="2" class="bg-gray-50"></textarea>
+                    </div>
+
+                    <!-- Soru 12 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label class="text-lg">12. Satış Modelimiz Ne Olacak?</label>
+                         <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="sales_self" name="sales_model" value="self" class="hidden"><label for="sales_self">Self-Servis (Kredi kartı ile)</label></div>
+                            <div><input type="radio" id="sales_team" name="sales_model" value="team" class="hidden"><label for="sales_team">Satış Odaklı (Demo talebi)</label></div>
+                        </div>
+
+                        <label for="sales_threshold" class="sub-question-label">12.1. Hangi Fiyat Noktasından Sonra Self-Servis Modeli Yetersiz Kalır ve İnsan Müdahalesi Gerekir?</label>
+                        <textarea id="sales_threshold" name="sales_threshold" rows="2" class="bg-gray-50"></textarea>
+
+                        <label class="sub-question-label">12.2. Karma Bir Model (Hybrid) Uygulayacak mıyız?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="hybrid_yes" name="hybrid_model" value="yes" class="hidden"><label for="hybrid_yes">Evet</label></div>
+                            <div><input type="radio" id="hybrid_no" name="hybrid_model" value="no" class="hidden"><label for="hybrid_no">Hayır</label></div>
+                        </div>
+                    </div>
+
+                     <!-- Soru 13 (Detaylandırıldı) -->
+                    <div class="question-block">
+                        <label for="onboarding" class="text-lg">13. Müşteri Başlangıç (Onboarding) ve Destek Süreci Nasıl İşleyecek?</label>
+                        
+                        <label class="sub-question-label">13.1. Yeni Müşteri Onboarding Süreci Nasıl Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                            <div><input type="checkbox" id="onboard_email" name="onboarding_process" value="email" class="hidden"><label for="onboard_email">Otomatik E-posta Serisi</label></div>
+                            <div><input type="checkbox" id="onboard_tour" name="onboarding_process" value="tour" class="hidden"><label for="onboard_tour">İnteraktif Ürün Turu</label></div>
+                            <div><input type="checkbox" id="onboard_training" name="onboarding_process" value="training" class="hidden"><label for="onboard_training">Birebir Eğitim / Demo</label></div>
+                            <div><input type="checkbox" id="onboard_docs" name="onboarding_process" value="docs" class="hidden"><label for="onboard_docs">Detaylı Dokümantasyon</label></div>
+                        </div>
+
+                        <label class="sub-question-label">13.2. Müşteri Desteğini Hangi Kanallardan Sunacağız?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 checkbox-group">
+                            <div><input type="checkbox" id="support_email" name="support_channel" value="email" class="hidden"><label for="support_email">E-posta</label></div>
+                            <div><input type="checkbox" id="support_chat" name="support_channel" value="chat" class="hidden"><label for="support_chat">Canlı Sohbet</label></div>
+                            <div><input type="checkbox" id="support_phone" name="support_channel" value="phone" class="hidden"><label for="support_phone">Telefon</label></div>
+                            <div><input type="checkbox" id="support_community" name="support_channel" value="community" class="hidden"><label for="support_community">Topluluk Forumu</label></div>
+                        </div>
+
+                        <label for="support_sla" class="sub-question-label">13.3. Hizmet Seviyesi Taahhüdümüz (SLA) Ne Olacak?</label>
+                        <textarea id="support_sla" name="support_sla" rows="2" class="bg-gray-50" placeholder="Örn: Kritik sorunlara 4 saat, genel sorulara 24 saat içinde ilk yanıt..."></textarea>
+                    </div>
+                 </div>
+            </fieldset>
+
+            <!-- YENİ BÖLÜM 5: TEKNOLOJİ YIĞINI SEÇİMİ -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 5: Teknoloji Yığını Seçimi</legend>
+                <div class="space-y-8">
+                    <div class="question-block">
+                        <h3 class="sub-legend">Backend Teknolojileri</h3>
+                        <label class="sub-question-label">14. Ana Backend Programlama Dili Ne Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 radio-group">
+                            <div><input type="radio" id="lang_csharp" name="backend_lang" value="csharp" class="hidden"><label for="lang_csharp">C#</label></div>
+                            <div><input type="radio" id="lang_java" name="backend_lang" value="java" class="hidden"><label for="lang_java">Java</label></div>
+                            <div><input type="radio" id="lang_python" name="backend_lang" value="python" class="hidden"><label for="lang_python">Python</label></div>
+                            <div><input type="radio" id="lang_go" name="backend_lang" value="go" class="hidden"><label for="lang_go">Go</label></div>
+                            <div><input type="radio" id="lang_node" name="backend_lang" value="node" class="hidden"><label for="lang_node">Node.js (JS/TS)</label></div>
+                        </div>
+                        <label for="lang_reason" class="sub-question-label">14.1. Bu Dilin Seçim Nedeni Nedir?</label>
+                        <textarea id="lang_reason" name="lang_reason" rows="2" class="bg-gray-50" placeholder="Ekip yetkinliği, performans, ekosistem, kütüphane desteği..."></textarea>
+
+                        <label class="sub-question-label">15. Ana Backend Framework'ü Ne Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="fw_aspnet" name="backend_fw" value="aspnet" class="hidden"><label for="fw_aspnet">ASP.NET Core</label></div>
+                            <div><input type="radio" id="fw_springboot" name="backend_fw" value="springboot" class="hidden"><label for="fw_springboot">Spring Boot</label></div>
+                            <div><input type="radio" id="fw_django" name="backend_fw" value="django" class="hidden"><label for="fw_django">Django / FastAPI</label></div>
+                            <div><input type="radio" id="fw_express" name="backend_fw" value="express" class="hidden"><label for="fw_express">Express.js / NestJS</label></div>
+                        </div>
+                        <label for="fw_reason" class="sub-question-label">15.1. Bu Framework'ün Seçim Nedeni Nedir?</label>
+                        <textarea id="fw_reason" name="fw_reason" rows="2" class="bg-gray-50" placeholder="Hızlı geliştirme, ölçeklenebilirlik, güvenlik özellikleri, dokümantasyon..."></textarea>
+                    </div>
+
+                    <div class="question-block">
+                        <h3 class="sub-legend">Frontend Teknolojileri</h3>
+                        <label class="sub-question-label">16. Web Uygulaması (Yönetim Paneli) İçin Hangi Teknoloji Kullanılacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 radio-group">
+                            <div><input type="radio" id="front_razor" name="frontend_web" value="razor" class="hidden"><label for="front_razor">ASP.NET Core (Razor/Blazor)</label></div>
+                            <div><input type="radio" id="front_react" name="frontend_web" value="react" class="hidden"><label for="front_react">React</label></div>
+                            <div><input type="radio" id="front_angular" name="frontend_web" value="angular" class="hidden"><label for="front_angular">Angular</label></div>
+                            <div><input type="radio" id="front_vue" name="frontend_web" value="vue" class="hidden"><label for="front_vue">Vue.js</label></div>
+                        </div>
+                         <label for="frontend_web_reason" class="sub-question-label">16.1. Bu Seçimin Nedeni Nedir?</label>
+                        <textarea id="frontend_web_reason" name="frontend_web_reason" rows="2" class="bg-gray-50" placeholder="Ekip yetkinliği, SEO uyumluluğu, performans, API ile entegrasyon kolaylığı..."></textarea>
+
+                        <label class="sub-question-label">17. Mobil Uygulama İçin Hangi Yaklaşım Benimsenecek?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="mobile_native" name="frontend_mobile" value="native" class="hidden"><label for="mobile_native">Native (Swift/Kotlin)</label></div>
+                            <div><input type="radio" id="mobile_flutter" name="frontend_mobile" value="flutter" class="hidden"><label for="mobile_flutter">Cross-Platform: Flutter</label></div>
+                            <div><input type="radio" id="mobile_reactnative" name="frontend_mobile" value="reactnative" class="hidden"><label for="mobile_reactnative">Cross-Platform: React Native</label></div>
+                            <div><input type="radio" id="mobile_none" name="frontend_mobile" value="none" class="hidden"><label for="mobile_none">Mobil Uygulama Olmayacak (PWA/Responsive Web)</label></div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <h3 class="sub-legend">Veritabanı Teknolojileri</h3>
+                        <label class="sub-question-label">18. Ana Veritabanı Türü Ne Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="db_sql" name="db_type" value="sql" class="hidden"><label for="db_sql">İlişkisel (SQL)</label></div>
+                            <div><input type="radio" id="db_nosql" name="db_type" value="nosql" class="hidden"><label for="db_nosql">NoSQL</label></div>
+                        </div>
+
+                        <label class="sub-question-label">18.1. İlişkisel Veritabanı Seçilirse, Hangisi Olacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="db_postgres" name="db_sql_choice" value="postgres" class="hidden"><label for="db_postgres">PostgreSQL</label></div>
+                            <div><input type="radio" id="db_sqlserver" name="db_sql_choice" value="sqlserver" class="hidden"><label for="db_sqlserver">SQL Server</label></div>
+                            <div><input type="radio" id="db_mysql" name="db_sql_choice" value="mysql" class="hidden"><label for="db_mysql">MySQL</label></div>
+                        </div>
+                        <label for="db_reason" class="sub-question-label">18.2. Bu Veritabanı Seçiminin Nedeni Nedir?</label>
+                        <textarea id="db_reason" name="db_reason" rows="2" class="bg-gray-50" placeholder="Açık kaynak olması, genişletilebilirlik (PostGIS, Timescale), maliyet, bulut desteği..."></textarea>
+                    </div>
+
+                    <div class="question-block">
+                        <h3 class="sub-legend">Altyapı ve Dağıtım (Deployment)</h3>
+                        <label class="sub-question-label">19. Uygulamalar Nerede Barındırılacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="host_aws" name="hosting_provider" value="aws" class="hidden"><label for="host_aws">Public Cloud: AWS</label></div>
+                            <div><input type="radio" id="host_azure" name="hosting_provider" value="azure" class="hidden"><label for="host_azure">Public Cloud: Azure</label></div>
+                            <div><input type="radio" id="host_gcp" name="hosting_provider" value="gcp" class="hidden"><label for="host_gcp">Public Cloud: GCP</label></div>
+                            <div><input type="radio" id="host_onprem" name="hosting_provider" value="onprem" class="hidden"><label for="host_onprem">On-Premise / Özel Sunucu</label></div>
+                        </div>
+
+                        <label class="sub-question-label">20. Uygulamalar Nasıl Paketlenip Dağıtılacak?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="deploy_docker" name="deployment_method" value="docker" class="hidden"><label for="deploy_docker">Docker Konteynerleri</label></div>
+                            <div><input type="radio" id="deploy_vm" name="deployment_method" value="vm" class="hidden"><label for="deploy_vm">Sanal Makineler</label></div>
+                            <div><input type="radio" id="deploy_serverless" name="deployment_method" value="serverless" class="hidden"><label for="deploy_serverless">Serverless</label></div>
+                        </div>
+
+                        <label class="sub-question-label">21. CI/CD (Sürekli Entegrasyon/Dağıtım) İçin Hangi Araçlar Kullanılacak?</label>
+                         <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 radio-group">
+                            <div><input type="radio" id="ci_github" name="ci_cd_tool" value="github" class="hidden"><label for="ci_github">GitHub Actions</label></div>
+                            <div><input type="radio" id="ci_azure" name="ci_cd_tool" value="azure" class="hidden"><label for="ci_azure">Azure DevOps</label></div>
+                            <div><input type="radio" id="ci_jenkins" name="ci_cd_tool" value="jenkins" class="hidden"><label for="ci_jenkins">Jenkins</label></div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- YENİ BÖLÜM 6: TEKNİK OPERASYONLAR VE SÜRDÜRÜLEBİLİRLİK -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 6: Teknik Operasyonlar ve Sürdürülebilirlik</legend>
+                 <div class="space-y-8">
+                    <!-- Soru 22 (Eski 14) -->
+                    <div class="question-block">
+                        <label class="text-lg">22. Mimari Yaklaşımımız ve Çoklu Kiracılık (Multi-tenancy) Modelimiz Nedir?</label>
+                        <div class="mt-2 space-y-3 radio-group">
+                            <div><input type="radio" id="tenant_shared_db" name="tenancy_model" value="shared_db" class="hidden"><label for="tenant_shared_db">Tek Veritabanı - Ortak Şema</label></div>
+                            <div><input type="radio" id="tenant_schema_per_tenant" name="tenancy_model" value="schema_per_tenant" class="hidden"><label for="tenant_schema_per_tenant">Tek Veritabanı - Kiracı Başına Şema</label></div>
+                            <div><input type="radio" id="tenant_db_per_tenant" name="tenancy_model" value="db_per_tenant" class="hidden"><label for="tenant_db_per_tenant">Kiracı Başına Ayrı Veritabanı</label></div>
+                        </div>
+                        
+                        <label for="tenancy_impact" class="sub-question-label">22.1. Seçilen Kiracılık Modelinin Maliyet, Güvenlik İzolasyonu ve Performans Üzerindeki Etkileri Nelerdir?</label>
+                        <textarea id="tenancy_impact" name="tenancy_impact" rows="3" class="bg-gray-50"></textarea>
+                    </div>
+
+                    <!-- Soru 23 (Eski 15) -->
+                    <div class="question-block">
+                        <label class="text-lg">23. Seçilen Teknoloji Yığınının Uzun Vadede Sürdürülebilirliği Nasıl Değerlendiriliyor?</label>
+                        
+                        <label for="scaling_needs" class="sub-question-label">23.1. 3-5 Yıl Sonraki Ölçeklenme İhtiyaçları Neler Olabilir?</label>
+                        <textarea id="scaling_needs" name="scaling_needs" rows="2" class="bg-gray-50"></textarea>
+
+                        <label class="sub-question-label">23.2. Seçilen Teknoloji Yığını İçin Yetenek Havuzu (İşe Alım Kolaylığı) Nasıl?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 radio-group">
+                            <div><input type="radio" id="talent_easy" name="talent_pool" value="easy" class="hidden"><label for="talent_easy">Kolay</label></div>
+                            <div><input type="radio" id="talent_medium" name="talent_pool" value="medium" class="hidden"><label for="talent_medium">Orta</label></div>
+                            <div><input type="radio" id="talent_hard" name="talent_pool" value="hard" class="hidden"><label for="talent_hard">Zor</label></div>
+                        </div>
+                    </div>
+
+                     <!-- Soru 24 (Eski 16) -->
+                    <div class="question-block">
+                        <label class="text-lg">24. Veri Güvenliği, Yedekleme ve Felaket Kurtarma Planımız Nedir?</label>
+                        
+                        <label for="hosting_location" class="sub-question-label">24.1. Müşteri Verileri Seçilen Platformda Hangi Coğrafi Bölgede Barındırılacak?</label>
+                        <textarea id="hosting_location" name="hosting_location" rows="2" class="bg-gray-50"></textarea>
+
+                        <label for="security_measures" class="sub-question-label">24.2. Veri İhlallerine Karşı Hangi Önlemleri Alıyoruz?</label>
+                        <textarea id="security_measures" name="security_measures" rows="2" class="bg-gray-50"></textarea>
+
+                        <label for="backup_frequency" class="sub-question-label">24.3. Veriler Ne Sıklıkla Yedekleniyor?</label>
+                        <textarea id="backup_frequency" name="backup_frequency" rows="2" class="bg-gray-50"></textarea>
+                        
+                        <label for="rto_rpo" class="sub-question-label">24.4. Felaket Anında Sistemi Ne Kadar Sürede Ayağa Kaldırabiliriz (RTO/RPO)?</label>
+                        <textarea id="rto_rpo" name="rto_rpo" rows="2" class="bg-gray-50"></textarea>
+                    </div>
+                 </div>
+            </fieldset>
+
+            <!-- YENİ BÖLÜM 7: PROJE DEĞERLENDİRME VE KAYIT -->
+            <fieldset>
+                <legend class="mb-6">Bölüm 7: Proje Değerlendirme ve Kayıt</legend>
+                <div class="space-y-8">
+                    <div class="question-block">
+                        <h3 class="sub-legend">Değerlendirme Bilgileri</h3>
+                        <label for="evaluator_name" class="sub-question-label">25. Anketi Yanıtlayan Kişi/Ekip:</label>
+                        <input type="text" id="evaluator_name" name="evaluator_name" class="bg-gray-50">
+                        
+                        <label for="evaluation_date" class="sub-question-label">26. Değerlendirme Tarihi:</label>
+                        <input type="date" id="evaluation_date" name="evaluation_date" class="bg-gray-50">
+                    </div>
+
+                    <div class="question-block">
+                        <h3 class="sub-legend">Proje Fikri Bilgileri</h3>
+                        <label for="idea_name" class="sub-question-label">27. Proje Fikrinin Adı:</label>
+                        <input type="text" id="idea_name" name="idea_name" class="bg-gray-50">
+
+                        <label for="idea_description" class="sub-question-label">28. Proje Fikrinin Kısa Açıklaması:</label>
+                        <textarea id="idea_description" name="idea_description" rows="3" class="bg-gray-50"></textarea>
+                    </div>
+
+                    <div class="question-block">
+                        <h3 class="sub-legend">Nihai Karar</h3>
+                        <label class="sub-question-label">29. Bu Fikir Projeye Dönüştürülecek mi?</label>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 radio-group">
+                            <div><input type="radio" id="decision_go" name="final_decision" value="go" class="hidden"><label for="decision_go">Evet, Projelendirilecek</label></div>
+                            <div><input type="radio" id="decision_hold" name="final_decision" value="hold" class="hidden"><label for="decision_hold">Hayır, Ertelenecek</label></div>
+                            <div><input type="radio" id="decision_no_go" name="final_decision" value="no_go" class="hidden"><label for="decision_no_go">Hayır, İptal Edilecek</label></div>
+                        </div>
+
+                        <label for="project_short_name" class="sub-question-label">30. (Onaylandıysa) Projenin Kısa Adı Ne Olacak?</label>
+                        <input type="text" id="project_short_name" name="project_short_name" class="bg-gray-50" placeholder="Örn: EduHR">
+
+                        <label for="project_code" class="sub-question-label">31. (Onaylandıysa) Projenin Kodu Ne Olacak?</label>
+                        <input type="text" id="project_code" name="project_code" class="bg-gray-50" placeholder="Örn: EHR-2025">
+                    </div>
+                </div>
+            </fieldset>
+            
+            <!-- KAYDET/YAZDIR BUTONU -->
+            <div class="text-center pt-8">
+                <button type="button" onclick="window.print()" class="print-button">
+                    Anketi Yazdır veya PDF Olarak Kaydet
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
