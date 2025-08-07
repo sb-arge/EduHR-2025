@@ -5,6 +5,7 @@ D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.GeneratedM
 D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.AssemblyInfoInputs.cache
 D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.AssemblyInfo.cs
 D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.csproj.CoreCompileInputs.cache
+D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.sourcelink.json
 D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.dll
 D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\refint\EduHR.Common.dll
 D:\EduHR-2025\src\5_Common\EduHR.Common\obj\Debug\net9.0\EduHR.Common.pdb
