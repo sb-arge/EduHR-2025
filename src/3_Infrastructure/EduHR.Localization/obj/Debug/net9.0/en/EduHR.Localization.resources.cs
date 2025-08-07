@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduHR.Localization")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+975ab7ecb415ea381b819bfdc18b1b50bccf2c00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46a9d0727d804d7e1ff999b07210e77c2ab79828")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduHR.Localization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduHR.Localization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

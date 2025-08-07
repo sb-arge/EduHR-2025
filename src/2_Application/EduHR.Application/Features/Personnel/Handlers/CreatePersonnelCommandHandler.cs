@@ -3,13 +3,15 @@ using EduHR.Application.Exceptions;
 using EduHR.Application.Features.Personnel.Commands;
 using EduHR.Application.Interfaces;
 using EduHR.Common.DTOs;
-using EduHR.Domain.Entities;
 using EduHR.Domain.Events;
 using EduHR.Domain.Interfaces;
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 using System.Threading;
 using System.Threading.Tasks;
+
+// --- HATA ÇÖZÜMÜ: Domain'deki Personnel sınıfına bir takma ad veriyoruz. ---
+using PersonnelEntity = EduHR.Domain.Entities.Personnel;
 
 namespace EduHR.Application.Features.Personnel.Handlers;
 
@@ -45,18 +47,16 @@ public class CreatePersonnelCommandHandler : IRequestHandler<CreatePersonnelComm
     {
         var tenantId = _currentUserService.TenantId ?? throw new UnauthorizedAccessException("Tenant ID could not be determined.");
 
-        // İlgili pozisyonun var olup olmadığını ve bu kiracıya ait olup olmadığını kontrol et.
         var position = await _positionRepository.GetByIdAsync(request.PositionId);
         if (position is null || position.TenantId != tenantId)
         {
-            throw new NotFoundException(nameof(Position), request.PositionId);
+            throw new NotFoundException("Position", request.PositionId);
         }
 
-        // Yeni personel varlığını oluştur.
-        var newPersonnel = _mapper.Map<Personnel>(request);
+        // --- HATA DÜZELTME: Artık takma adı (PersonnelEntity) kullanıyoruz. ---
+        var newPersonnel = _mapper.Map<PersonnelEntity>(request);
         newPersonnel.TenantId = tenantId;
 
-        // Personel için bir kullanıcı hesabı oluştur.
         var (result, userId) = await _identityService.CreateUserAsync(
             tenantId, 
             request.FirstName, 
@@ -70,16 +70,12 @@ public class CreatePersonnelCommandHandler : IRequestHandler<CreatePersonnelComm
             throw new ValidationException(result.Message);
         }
 
-        // Oluşturulan kullanıcı ID'sini personel kaydına bağla.
         newPersonnel.UserId = userId;
         
-        // Personeli veritabanına ekle.
         await _personnelRepository.AddAsync(newPersonnel);
         
-        // Olayı yayınla.
         await _mediator.Publish(new PersonnelCreatedEvent(newPersonnel), cancellationToken);
         
-        // Sonucu DTO olarak geri dön.
         return _mapper.Map<PersonnelSummaryDto>(newPersonnel);
     }
 }
