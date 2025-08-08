@@ -3,6 +3,9 @@
 ## Derleme çıktıları
 **/[Bb]in/
 **/[Oo]bj/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/[Tt]est[Rr]esults*/
 
 ## Visual Studio IDE
 .vs/
@@ -18,6 +21,13 @@
 ## Test sonuçları
 *.TestResult.xml
 *.trx
+TestResults/
+TestResult*/
+*.coverage*
+coverage*.json
+coverage*.xml
+coverage*.info
+lcov.info
 
 ## Bağımlılıklar ve Paketler
 **/[Pp]ackages/
@@ -33,3 +43,4 @@
 *.log
 *.tmp
 *.bak
+.vscode/
