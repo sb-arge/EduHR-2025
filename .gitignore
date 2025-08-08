@@ -1,0 +1,35 @@
+# Visual Studio / .NET için standart yoksayma listesi
+
+## Derleme çıktıları
+**/[Bb]in/
+**/[Oo]bj/
+
+## Visual Studio IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## JetBrains Rider
+.idea/
+*.sln.iml
+
+## Test sonuçları
+*.TestResult.xml
+*.trx
+
+## Bağımlılıklar ve Paketler
+**/[Pp]ackages/
+**/[Nn]ode_modules/
+**/[Jj]spm_packages/
+**/[Ww]eb[Pp]roject/
+**/[Bb]ower_components/
+**/[Ll]ib/
+**/[Dd]eps/
+**/[Vv]endor/
+
+## Diğerleri
+*.log
+*.tmp
+*.bak
