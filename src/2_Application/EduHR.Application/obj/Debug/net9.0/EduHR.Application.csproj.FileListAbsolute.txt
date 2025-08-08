@@ -1,6 +1,0 @@
-D:\EduHR-2025\src\2_Application\EduHR.Application\obj\Debug\net9.0\EduHR.Application.csproj.AssemblyReference.cache
-D:\EduHR-2025\src\2_Application\EduHR.Application\obj\Debug\net9.0\EduHR.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\EduHR-2025\src\2_Application\EduHR.Application\obj\Debug\net9.0\EduHR.Application.AssemblyInfoInputs.cache
-D:\EduHR-2025\src\2_Application\EduHR.Application\obj\Debug\net9.0\EduHR.Application.AssemblyInfo.cs
-D:\EduHR-2025\src\2_Application\EduHR.Application\obj\Debug\net9.0\EduHR.Application.csproj.CoreCompileInputs.cache
-D:\EduHR-2025\src\2_Application\EduHR.Application\obj\Debug\net9.0\EduHR.Application.sourcelink.json
