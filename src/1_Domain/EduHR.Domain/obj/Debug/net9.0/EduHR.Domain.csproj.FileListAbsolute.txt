@@ -1,5 +1,13 @@
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\bin\Debug\net9.0\EduHR.Domain.deps.json
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\bin\Debug\net9.0\EduHR.Domain.dll
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\bin\Debug\net9.0\EduHR.Domain.pdb
 D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.csproj.AssemblyReference.cache
 D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.AssemblyInfoInputs.cache
 D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.AssemblyInfo.cs
 D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.csproj.CoreCompileInputs.cache
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.sourcelink.json
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.dll
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\refint\EduHR.Domain.dll
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\EduHR.Domain.pdb
+D:\EduHR-2025\src\1_Domain\EduHR.Domain\obj\Debug\net9.0\ref\EduHR.Domain.dll

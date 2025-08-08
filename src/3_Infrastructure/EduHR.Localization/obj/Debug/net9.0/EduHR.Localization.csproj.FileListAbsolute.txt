@@ -18,6 +18,7 @@ D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\EduHR.Loc
 D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\EduHR.Localization.AssemblyInfoInputs.cache
 D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\EduHR.Localization.AssemblyInfo.cs
 D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\EduHR.Localization.csproj.CoreCompileInputs.cache
+D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\EduHR.Localization.sourcelink.json
 D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\en\EduHR.Localization.resources.cs
 D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\en\EduHR.Localization.resources.dll
 D:\EduHR-2025\src\3_Infrastructure\EduHR.Localization\obj\Debug\net9.0\tr\EduHR.Localization.resources.cs

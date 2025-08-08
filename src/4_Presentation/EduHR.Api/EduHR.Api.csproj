@@ -18,5 +18,7 @@
     <ProjectReference Include="..\..\3_Infrastructure\EduHR.Infrastructure\EduHR.Infrastructure.csproj" />
     <ProjectReference Include="..\..\5_Common\EduHR.Common\EduHR.Common.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <InternalsVisibleTo Include="EduHR.Api.IntegrationTests" />
+  </ItemGroup>
 </Project>
