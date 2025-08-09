@@ -1,0 +1,15 @@
+{
+  "name": "EduHR-2025 .NET 9 Dev Container",
+  "image": "mcr.microsoft.com/dotnet/sdk:9.0",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-dotnettools.csharp"
+      ]
+    }
+  },
+  "forwardPorts": [5000, 5001],
+  "postCreateCommand": "dotnet --version"
+}
