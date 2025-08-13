@@ -13,7 +13,7 @@ Mimari İlkeler, Yaklaşımlar, Terimler, Tercih-Kararlar
 •	İyimser Eşzamanlılık (Optimistic Concurrency) Yaklaşımı
 •	Anti-CSRF Token Mekanizması
 •	API 401 Yanıtlarının Yönetimi
-•	Veritabanı Yaklaşımı (Tek Veritabanı + Tek Şema)
+•	Tek Veritabanı, Paylaşımlı Şema (Multi-Tenant) ve Mantıksal Amaçlı Çoklu Şema (Multi-Schema for Logical Separation)
 Planlama
 •	Plan adımlarının tamamlanmış olması. 
 •	Plan adım sırasına uygunluk
